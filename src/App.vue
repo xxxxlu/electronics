@@ -14,7 +14,7 @@
         <div class="nav-icons">
           <router-link to="/wishlist" class="icon">
             ❤️
-            <span class="wishlist-count">0</span>
+            <span class="wishlist-count">{{ wishlistItemCount }}</span>
           </router-link>
           <router-link to="/cart" class="icon">
             <img src="https://theelectronicshome.com/wp-content/uploads/2023/01/befurniturestore2-header-icon2.svg" alt="">
@@ -59,7 +59,7 @@ import { mapGetters } from 'vuex'
 export default {
   name: 'App',
   computed: {
-    ...mapGetters(['cartItemCount'])
+    ...mapGetters(['cartItemCount', 'wishlistItemCount'])
   }
 }
 </script>

@@ -27,7 +27,11 @@ export default {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    font-size: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 9999;
 }
 /* Absolute Center Spinner */
 .loading-item {
