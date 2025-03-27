@@ -287,8 +287,6 @@ export default {
 
       // Here you would normally send the order to your backend
       // For this demo, we'll just clear the cart and show an order confirmation
-
-      alert('Order placed successfully! Thank you for your purchase.')
       this.$store.dispatch('clearCart')
       this.$router.push('/loading')
     }

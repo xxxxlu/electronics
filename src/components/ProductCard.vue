@@ -30,6 +30,7 @@ export default {
       return price.toLocaleString()
     },
     addToCart () {
+      alert('Product added to cart!')
       this.$store.dispatch('addToCart', { product: this.product, quantity: 1 })
     }
   }
@@ -67,7 +68,7 @@ export default {
   font-weight: 600;
   margin-bottom: 10px;
   color: var(--text-color);
-  height: 40px;
+  height: 50px;
   overflow: hidden;
 }
 

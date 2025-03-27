@@ -322,8 +322,11 @@ export default {
 }
 
 .cart-totals {
-  max-width: 400px;
-  margin-left: auto;
+  width: 50%;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cart-totals h2 {
@@ -360,9 +363,10 @@ export default {
 }
 
 .checkout-btn {
-  width: 100%;
+  width: 40%;
   padding: 12px;
   font-size: 16px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
