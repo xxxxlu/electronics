@@ -26,11 +26,11 @@ export default {
     }
   },
   methods: {
-    formatPrice(price) {
-      return price.toLocaleString();
+    formatPrice (price) {
+      return price.toLocaleString()
     },
-    addToCart() {
-      this.$store.dispatch('addToCart', { product: this.product, quantity: 1 });
+    addToCart () {
+      this.$store.dispatch('addToCart', { product: this.product, quantity: 1 })
     }
   }
 }

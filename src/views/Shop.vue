@@ -49,11 +49,12 @@ import { mapState } from 'vuex'
 import ProductCard from '../components/ProductCard.vue'
 
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
   name: 'Shop',
   components: {
     ProductCard
   },
-  data() {
+  data () {
     return {
       selectedCategory: '',
       selectedBrand: '',
@@ -62,7 +63,7 @@ export default {
   },
   computed: {
     ...mapState(['products']),
-    filteredProducts() {
+    filteredProducts () {
       let result = [...this.products]
 
       // Filter by category

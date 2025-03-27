@@ -82,7 +82,7 @@ export default new Vuex.Store({
     }
   },
   mutations: {
-    addToCart(state, { product, quantity }) {
+    addToCart (state, { product, quantity }) {
       const existingItem = state.cart.find(item => item.id === product.id)
 
       if (existingItem) {
@@ -94,44 +94,44 @@ export default new Vuex.Store({
         })
       }
     },
-    removeFromCart(state, productId) {
+    removeFromCart (state, productId) {
       state.cart = state.cart.filter(item => item.id !== productId)
     },
-    updateCartItemQuantity(state, { productId, quantity }) {
+    updateCartItemQuantity (state, { productId, quantity }) {
       const item = state.cart.find(item => item.id === productId)
       if (item) {
         item.quantity = quantity
       }
     },
-    clearCart(state) {
+    clearCart (state) {
       state.cart = []
     },
-    addToWishlist(state, product) {
+    addToWishlist (state, product) {
       if (!state.wishlist.some(item => item.id === product.id)) {
         state.wishlist.push(product)
       }
     },
-    removeFromWishlist(state, productId) {
+    removeFromWishlist (state, productId) {
       state.wishlist = state.wishlist.filter(item => item.id !== productId)
     }
   },
   actions: {
-    addToCart({ commit }, { product, quantity = 1 }) {
+    addToCart ({ commit }, { product, quantity = 1 }) {
       commit('addToCart', { product, quantity })
     },
-    removeFromCart({ commit }, productId) {
+    removeFromCart ({ commit }, productId) {
       commit('removeFromCart', productId)
     },
-    updateCartItemQuantity({ commit }, { productId, quantity }) {
+    updateCartItemQuantity ({ commit }, { productId, quantity }) {
       commit('updateCartItemQuantity', { productId, quantity })
     },
-    clearCart({ commit }) {
+    clearCart ({ commit }) {
       commit('clearCart')
     },
-    addToWishlist({ commit }, product) {
+    addToWishlist ({ commit }, product) {
       commit('addToWishlist', product)
     },
-    removeFromWishlist({ commit }, productId) {
+    removeFromWishlist ({ commit }, productId) {
       commit('removeFromWishlist', productId)
     }
   }

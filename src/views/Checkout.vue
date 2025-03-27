@@ -200,7 +200,9 @@
                   value="cod"
                   v-model="paymentMethod"
                 >
-                <label for="cod">Cash on delivery</label>
+                <label for="bank-transfer">
+                  <img src="../assets/images/Frame 3.png" alt="jazzCash" style="width: 120px;height: 70px;">
+                </label>
               </div>
 
               <div class="payment-option">
@@ -210,7 +212,9 @@
                   value="bank-transfer"
                   v-model="paymentMethod"
                 >
-                <label for="bank-transfer">Direct bank transfer</label>
+                <label for="bank-transfer">
+                  <img src="../assets/images/easypaisa.png" alt="easypaisa" style="width: 120px;height: 70px;">
+                </label>
               </div>
             </div>
           </div>
@@ -241,8 +245,9 @@
 import { mapState, mapGetters } from 'vuex'
 
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
   name: 'Checkout',
-  data() {
+  data () {
     return {
       billingDetails: {
         firstName: '',
@@ -266,10 +271,10 @@ export default {
     ...mapGetters(['cartTotalPrice'])
   },
   methods: {
-    formatPrice(price) {
+    formatPrice (price) {
       return price.toLocaleString()
     },
-    placeOrder() {
+    placeOrder () {
       if (!this.termsAgreed || !this.paymentMethod) {
         alert('Please agree to the terms and select a payment method.')
         return
@@ -285,7 +290,7 @@ export default {
 
       alert('Order placed successfully! Thank you for your purchase.')
       this.$store.dispatch('clearCart')
-      this.$router.push('/order-confirmation')
+      this.$router.push('/loading')
     }
   }
 }
@@ -465,10 +470,12 @@ export default {
 
 .payment-option {
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .payment-option label {
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .terms-agreement {

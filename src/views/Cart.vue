@@ -115,16 +115,17 @@
 import { mapState, mapGetters } from 'vuex'
 
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
   name: 'Cart',
   computed: {
     ...mapState(['cart']),
     ...mapGetters(['cartTotalPrice'])
   },
   methods: {
-    formatPrice(price) {
+    formatPrice (price) {
       return price.toLocaleString()
     },
-    increaseQuantity(productId) {
+    increaseQuantity (productId) {
       const item = this.cart.find(item => item.id === productId)
       if (item) {
         this.$store.dispatch('updateCartItemQuantity', {
@@ -133,7 +134,7 @@ export default {
         })
       }
     },
-    decreaseQuantity(productId) {
+    decreaseQuantity (productId) {
       const item = this.cart.find(item => item.id === productId)
       if (item && item.quantity > 1) {
         this.$store.dispatch('updateCartItemQuantity', {
@@ -142,7 +143,7 @@ export default {
         })
       }
     },
-    updateQuantity(productId, quantity) {
+    updateQuantity (productId, quantity) {
       quantity = parseInt(quantity)
       if (quantity >= 1) {
         this.$store.dispatch('updateCartItemQuantity', {
@@ -151,10 +152,10 @@ export default {
         })
       }
     },
-    removeFromCart(productId) {
+    removeFromCart (productId) {
       this.$store.dispatch('removeFromCart', productId)
     },
-    clearCart() {
+    clearCart () {
       if (confirm('Are you sure you want to remove all items from your cart?')) {
         this.$store.dispatch('clearCart')
       }

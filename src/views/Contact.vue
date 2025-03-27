@@ -39,7 +39,7 @@
         </div>
       </div>
       <div class="contact-content">
-      
+
         <img class="contact-img" src="https://theelectronicshome.com/wp-content/uploads/2025/03/Illustration3@2x-768x934.jpg" alt="" style="width: 500px; height: 500px">
 
         <div class="contact-form">
@@ -77,8 +77,9 @@
 
 <script>
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
   name: 'Contact',
-  data() {
+  data () {
     return {
       contactForm: {
         name: '',
@@ -89,7 +90,7 @@ export default {
     }
   },
   methods: {
-    submitForm() {
+    submitForm () {
       // Here we would normally send the form data to a backend
       // For this demo, we'll just show an alert
       alert('Thank you for your message! We will get back to you as soon as possible.')

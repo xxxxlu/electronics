@@ -137,7 +137,7 @@ export default {
   components: {
     ProductCard
   },
-  data() {
+  data () {
     return {
       quantity: 1,
       activeTab: 'description',
@@ -151,11 +151,11 @@ export default {
   },
   computed: {
     ...mapState(['products']),
-    product() {
+    product () {
       const productId = parseInt(this.$route.params.id)
       return this.products.find(p => p.id === productId) || null
     },
-    relatedProducts() {
+    relatedProducts () {
       if (!this.product) return []
 
       return this.products
@@ -164,25 +164,25 @@ export default {
     }
   },
   methods: {
-    formatPrice(price) {
+    formatPrice (price) {
       return price.toLocaleString()
     },
-    increaseQuantity() {
+    increaseQuantity () {
       this.quantity++
     },
-    decreaseQuantity() {
+    decreaseQuantity () {
       if (this.quantity > 1) {
         this.quantity--
       }
     },
-    addToCart() {
+    addToCart () {
       this.$store.dispatch('addToCart', {
         product: this.product,
         quantity: this.quantity
       })
       alert('Product added to cart!')
     },
-    addToWishlist() {
+    addToWishlist () {
       this.$store.dispatch('addToWishlist', this.product)
       alert('Product added to wishlist!')
     }

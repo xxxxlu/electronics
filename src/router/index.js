@@ -16,6 +16,11 @@ const routes = [
     component: () => import('../views/Shop.vue')
   },
   {
+    path: '/loading',
+    name: 'Loading',
+    component: () => import('../views/loading.vue')
+  },
+  {
     path: '/product/:id',
     name: 'ProductDetail',
     component: () => import('../views/ProductDetail.vue')
@@ -49,9 +54,8 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'history',
-  // base: process.env.BASE_URL,
   routes,
-  scrollBehavior() {
+  scrollBehavior () {
     return { x: 0, y: 0 }
   }
 })

@@ -61,18 +61,19 @@
 import { mapState } from 'vuex'
 
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
   name: 'Wishlist',
   computed: {
     ...mapState(['wishlist'])
   },
   methods: {
-    formatPrice(price) {
+    formatPrice (price) {
       return price.toLocaleString()
     },
-    removeFromWishlist(productId) {
+    removeFromWishlist (productId) {
       this.$store.dispatch('removeFromWishlist', productId)
     },
-    addToCart(product) {
+    addToCart (product) {
       this.$store.dispatch('addToCart', { product, quantity: 1 })
       alert('Product added to cart!')
     }
