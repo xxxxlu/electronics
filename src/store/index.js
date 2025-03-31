@@ -9,8 +9,8 @@ export default new Vuex.Store({
       {
         id: 1,
         title: 'GREE 1.5 TON FAIRY SERIES INVERTER SPLIT AC Model GS-18FITH7G',
-        price: 204900,
-        originalPrice: 215700,
+        price: 42900,
+        originalPrice: 41570,
         image: 'https://ext.same-assets.com/3364867358/3392281548.jpeg',
         category: 'Air Conditioner',
         brand: 'Gree',
@@ -19,7 +19,7 @@ export default new Vuex.Store({
       {
         id: 2,
         title: 'GREE 1.5 TON INVERTER SPLIT AC Model GS-18FITH6S',
-        price: 201999,
+        price: 41999,
         originalPrice: null,
         image: 'https://theelectronicshome.com/wp-content/uploads/2025/03/UntitledProject-2024-05-15T133605.701.webp',
         category: 'Air Conditioner',
@@ -29,7 +29,7 @@ export default new Vuex.Store({
       {
         id: 3,
         title: 'GREE 2.0 TON FAIRY ECONO INVERTER AC Model GS-24FITH7G',
-        price: 320000,
+        price: 39000,
         originalPrice: null,
         image: 'https://ext.same-assets.com/3364867358/1401459743.jpeg',
         category: 'Air Conditioner',
@@ -39,7 +39,7 @@ export default new Vuex.Store({
       {
         id: 4,
         title: 'TCL 2.0 TON INVERTER SPLIT AC Model TAC-24T5-SMART-S',
-        price: 215000,
+        price: 41500,
         originalPrice: null,
         image: 'https://ext.same-assets.com/3364867358/2938659421.png',
         category: 'Air Conditioner',
@@ -49,7 +49,7 @@ export default new Vuex.Store({
       {
         id: 5,
         title: 'Haier 1.5 Ton T3 Inverter AC Model HSU-20HFTEX OW',
-        price: 172999,
+        price: 41729,
         originalPrice: null,
         image: 'https://ext.same-assets.com/3364867358/3517188300.jpeg',
         category: 'Air Conditioner',
@@ -59,7 +59,7 @@ export default new Vuex.Store({
       {
         id: 6,
         title: 'HAIER 1.5 TON TRIPLE INVERTER SPLIT AC Model HSU-18HFCS W',
-        price: 134000,
+        price: 39400,
         originalPrice: null,
         image: 'https://theelectronicshome.com/wp-content/uploads/2025/03/HAIER-1.5-TON-T3-THUNDER-INVERTER-AC-Model-HSU-18HFTCD-W-2-800x800.jpg',
         category: 'Air Conditioner',
