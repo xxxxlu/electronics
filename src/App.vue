@@ -36,15 +36,14 @@
           <img class="img-payment" src="./assets/images/Frame 3.png" alt="jazzCash">
         </div>
         <div class="contact-info">
-          <div class="phone">+92 320 9972624</div>
           <div class="email">inspireinnosmc@gmail.com</div>
         </div>
       </div>
       <div class="footer-links">
-        <router-link to="/terms">Terms and Conditions</router-link>
-        <router-link to="/privacy">Privacy Policy</router-link>
-        <router-link to="/refund">Refund and Returns Policy</router-link>
-        <router-link to="/faqs">FAQS</router-link>
+        <router-link to="/">Terms and Conditions</router-link>
+        <router-link to="/">Privacy Policy</router-link>
+        <router-link to="/">Refund and Returns Policy</router-link>
+        <router-link to="/">FAQS</router-link>
       </div>
       <div class="copyright">
         Copyright © 2025 | Powered by Data Network Solutions

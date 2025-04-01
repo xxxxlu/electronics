@@ -219,19 +219,10 @@
             </div>
           </div>
 
-          <div class="terms-agreement">
-            <input
-              type="checkbox"
-              id="terms"
-              v-model="termsAgreed"
-            >
-            <label for="terms">I have read and agree to the website <router-link to="/terms">terms and conditions</router-link> *</label>
-          </div>
-
           <button
             @click="placeOrder"
             class="btn place-order-btn"
-            :disabled="!termsAgreed || !paymentMethod"
+            :disabled="!paymentMethod || !isFormValid"
           >
             Place Order
           </button>
@@ -262,20 +253,33 @@ export default {
         email: '',
         notes: ''
       },
-      paymentMethod: 'cod',
-      termsAgreed: false
+      paymentMethod: 'cod'
     }
   },
   computed: {
     ...mapState(['cart']),
-    ...mapGetters(['cartTotalPrice'])
+    ...mapGetters(['cartTotalPrice']),
+    // 添加新的计算属性检查表单完整性
+    isFormValid () {
+      return (
+        this.billingDetails.firstName &&
+        this.billingDetails.lastName &&
+        this.billingDetails.country &&
+        this.billingDetails.street &&
+        this.billingDetails.city &&
+        this.billingDetails.state &&
+        this.billingDetails.zip &&
+        this.billingDetails.phone &&
+        this.billingDetails.email
+      )
+    }
   },
   methods: {
     formatPrice (price) {
       return price.toLocaleString()
     },
     placeOrder () {
-      if (!this.termsAgreed || !this.paymentMethod) {
+      if (!this.paymentMethod) {
         alert('Please agree to the terms and select a payment method.')
         return
       }
