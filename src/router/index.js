@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Success from '../views/Success.vue'
 
 Vue.use(VueRouter)
 
@@ -49,6 +50,11 @@ const routes = [
     path: '/wishlist',
     name: 'Wishlist',
     component: () => import('../views/Wishlist.vue')
+  },
+  {
+    path: '/success',
+    name: 'Success',
+    component: Success
   }
 ]
 

@@ -36,7 +36,7 @@
           <img class="img-payment" src="./assets/images/Frame 3.png" alt="jazzCash">
         </div>
         <div class="contact-info">
-          <div class="email">inspireinnosmc@gmail.com</div>
+          <div class="email">paksmartbuy@gmail.com</div>
         </div>
       </div>
       <div class="footer-links">

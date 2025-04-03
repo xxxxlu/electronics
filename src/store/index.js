@@ -139,9 +139,9 @@ export default new Vuex.Store({
       {
         id: 14,
         title: 'LG 34" UltraWide Monitor',
-        price: 15999,
+        price: 18029.21,
         originalPrice: null,
-        image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800',
+        image: 'https://m.media-amazon.com/images/I/81GrL4IJNjL._AC_SL1500_.jpg',
         category: 'Monitors',
         brand: 'LG',
         description: 'WQHD curved gaming monitor with 144Hz refresh rate.'
@@ -209,9 +209,9 @@ export default new Vuex.Store({
       {
         id: 21,
         title: 'Samsung 32" Smart Monitor M8',
-        price: 14781,
-        originalPrice: 15999,
-        image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800',
+        price: 42893,
+        originalPrice: 60559,
+        image: 'https://m.media-amazon.com/images/I/71Cqqs9ibaL._AC_SL1500_.jpg',
         category: 'Monitors',
         brand: 'Samsung',
         description: '4K UHD Smart Monitor with built-in streaming apps and wireless DeX.'

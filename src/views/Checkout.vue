@@ -289,10 +289,21 @@ export default {
         return
       }
 
-      // Here you would normally send the order to your backend
-      // For this demo, we'll just clear the cart and show an order confirmation
+      // 准备订单数据
+      const orderData = {
+        firstName: this.billingDetails.firstName,
+        lastName: this.billingDetails.lastName,
+        phone: this.billingDetails.phone,
+        email: this.billingDetails.email,
+        total: this.cartTotalPrice + 1000
+      }
+
+      // 清空购物车并跳转到成功页面
       this.$store.dispatch('clearCart')
-      this.$router.push('/loading')
+      this.$router.push({
+        name: 'Success',
+        params: { orderData }
+      })
     }
   }
 }
