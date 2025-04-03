@@ -15,6 +15,18 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  created () {
+    // 获取订单数据
+    const orderData = this.$route.params.orderData
+
+    // 2秒后自动跳转到成功页面
+    setTimeout(() => {
+      this.$router.push({
+        name: 'Success',
+        params: { orderData }
+      })
+    }, 2000)
   }
 }
 </script>

@@ -298,10 +298,10 @@ export default {
         total: this.cartTotalPrice + 1000
       }
 
-      // 清空购物车并跳转到成功页面
+      // 清空购物车并跳转到 loading 页面
       this.$store.dispatch('clearCart')
       this.$router.push({
-        name: 'Success',
+        name: 'Loading',
         params: { orderData }
       })
     }
