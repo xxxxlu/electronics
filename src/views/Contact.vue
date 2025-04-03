@@ -17,10 +17,6 @@
         <p>Have questions about our products or services? We're here to help!</p>
 
         <div class="info-items">
-          <div class="info-item">
-            <h3>Phone</h3>
-            <p>+92 320 9972624</p>
-          </div>
 
           <div class="info-item">
             <h3>Email</h3>
