@@ -46,7 +46,7 @@
         <router-link to="/">FAQS</router-link>
       </div>
       <div class="copyright">
-        Copyright © 2025 | Powered by Data Network Solutions
+        Copyright © 2025 | Powered by Data Network Solutions (SMC-Private) Limited
       </div>
     </footer>
   </div>
