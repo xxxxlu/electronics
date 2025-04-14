@@ -20,12 +20,7 @@
 
           <div class="info-item">
             <h3>Email</h3>
-            <p>inspireinnosmc@gmail.com</p>
-          </div>
-
-          <div class="info-item">
-            <h3>Address</h3>
-            <p>INSPIREINNO SMC PRIVATE LIMITED<br>Pakistan</p>
+            <p>paksmartbuy@paksmartbuy.shop</p>
           </div>
 
           <div class="info-item">
@@ -143,7 +138,7 @@ export default {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 30px;
+  gap: 50px;
 }
 
 .info-item h3 {
