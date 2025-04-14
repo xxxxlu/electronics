@@ -46,7 +46,7 @@
         <router-link to="/">FAQS</router-link>
       </div>
       <div class="copyright">
-        Copyright © 2025 | Powered by Data Network Solutions (SMC-Private) Limited
+        Copyright © 2025 PakSmartBuy Store. Powered by DATA TECH SOLUTIONS SMC PRIVATE LIMITED2
       </div>
     </footer>
   </div>
